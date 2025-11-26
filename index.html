@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShoeLady - Cute Aesthetic Shop</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light shadow-sm cute-nav">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">ShoeLady</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#beranda">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="#tentang">Tentang Toko</a></li>
+          <li class="nav-item"><a class="nav-link" href="#produk">Produk</a></li>
+          <li class="nav-item"><a class="nav-link" href="#penjual">Tentang Penjual</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section id="beranda" class="hero d-flex align-items-center text-center">
+    <div class="container">
+      <h1 class="fw-bold hero-title">Tampil Cantik Dengan Sepatu Premium</h1>
+      <p class="hero-sub">Koleksi sepatu cute & aesthetic untuk wanita modern.</p>
+      <a href="#produk" class="btn btn-cute mt-3">Lihat Produk</a>
+    </div>
+  </section>
+
+  <!-- SEKILAS WEBSITE -->
+  <section class="toko-section" id="tentang">
+    <h2 class="toko-title">Tentang Toko</h2>
+
+    <div class="toko-box">
+      <p>
+        ShoeLady adalah toko sepatu wanita yang menghadirkan koleksi aesthetic,
+        lucu, dan modern. Kami berkomitmen untuk menyediakan sepatu berkualitas
+        dengan harga terjangkau agar semua wanita bisa tampil percaya diri setiap hari.
+      </p>
+
+      <div class="toko-info">
+
+        <div class="info-item">
+          <i class="bi bi-shop"></i>
+          <h4>Brand Aesthetic</h4>
+          <p>Setiap desain dibuat untuk wanita modern.</p>
+        </div>
+
+        <div class="info-item">
+          <i class="bi bi-gem"></i>
+          <h4>Kualitas Premium</h4>
+          <p>Material nyaman & awet digunakan.</p>
+        </div>
+
+        <div class="info-item">
+          <i class="bi bi-truck"></i>
+          <h4>Pengiriman Cepat</h4>
+          <p>Siap kirim ke seluruh Indonesia.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- PRODUK -->
+  <section id="produk" class="py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-4">Daftar Produk</h2>
+
+      <div class="row g-4">
+
+        <!-- PRODUK 1 -->
+        <div class="col-md-4">
+          <div class="card product-card">
+            <img
+              src="https://images.tokopedia.net/img/cache/700/VqbcmM/2023/8/28/8290d268-39fa-47c4-9a36-dd8accf7d640.jpg"
+              class="card-img-top">
+            <div class="card-body text-center">
+              <h5 class="card-title">Sneakers</h5>
+              <p class="price">Rp 150.000</p>
+              <button class="btn btn-cute" data-bs-toggle="modal" data-bs-target="#detail1">Lihat Detail</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- PRODUK 2 -->
+        <div class="col-md-4">
+          <div class="card product-card">
+            <img
+              src="https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/a3c440f705ad42e6a0dd4715e07ecc27~tplv-aphluv4xwc-resize-webp:800:800.webp?dr=15584&t=555f072d&ps=933b5bde&shp=6ce186a1&shcp=e1be8f53&idc=my2&from=1826719393"
+              class="card-img-top">
+            <div class="card-body text-center">
+              <h5 class="card-title">Flatshoes</h5>
+              <p class="price">Rp 85.000</p>
+              <button class="btn btn-cute" data-bs-toggle="modal" data-bs-target="#detail2">
+                Lihat Detail</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- PRODUK 3 -->
+        <div class="col-md-4">
+          <div class="card product-card">
+            <img
+              src="https://images.tokopedia.net/img/cache/700/VqbcmM/2023/3/29/a01d5dda-6271-4aec-afab-cc3106871b4c.jpg"
+              class="card-img-top">
+            <div class="card-body text-center">
+              <h5 class="card-title">Sling Back Shoes</h5>
+              <p class="price">Rp 175.000</p>
+              <button class="btn btn-cute" data-bs-toggle="modal" data-bs-target="#detail3">Lihat Detail</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- MODAL DETAIL PRODUK 1 -->
+  <div class="modal fade" id="detail1">
+    <div class="modal-dialog">
+      <div class="modal-content p-3">
+        <h4>Cute Pink Shoes</h4>
+        <img src="https://images.tokopedia.net/img/cache/700/VqbcmM/2023/8/28/8290d268-39fa-47c4-9a36-dd8accf7d640.jpg"
+          class="img-fluid rounded my-2">
+        <p>Sepatu pink aesthetic cocok untuk hangout & daily style.</p>
+        <p class="fw-bold">Harga: Rp 150.000</p>
+        <button class="btn btn-cute w-100" onclick="showPurchaseForm(1)">Beli Sekarang</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL 2 -->
+  <div class="modal fade" id="detail2">
+    <div class="modal-dialog">
+      <div class="modal-content p-3">
+        <h4>Cream Aesthetic Shoes</h4>
+        <img
+          src="https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/a3c440f705ad42e6a0dd4715e07ecc27~tplv-aphluv4xwc-resize-webp:800:800.webp?dr=15584&t=555f072d&ps=933b5bde&shp=6ce186a1&shcp=e1be8f53&idc=my2&from=1826719393"
+          class="img-fluid rounded my-2">
+        <p>Sepatu warna cream lembut, cocok untuk outfit casual.</p>
+        <p class="fw-bold">Harga: Rp 165.000</p>
+        <button class="btn btn-cute w-100" onclick="showPurchaseForm(1)">Beli Sekarang</button>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+
+  <!-- MODAL 3 -->
+  <div class="modal fade" id="detail3">
+    <div class="modal-dialog">
+      <div class="modal-content p-3">
+        <h4>White Elegant Shoes</h4>
+        <img src="https://images.tokopedia.net/img/cache/700/VqbcmM/2023/3/29/a01d5dda-6271-4aec-afab-cc3106871b4c.jpg"
+          class="img-fluid rounded my-2">
+        <p>Sepatu putih elegan untuk tampilan modern & stylish.</p>
+        <p class="fw-bold">Harga: Rp 175.000</p>
+        <button class="btn btn-cute w-100" onclick="showPurchaseForm(1)">Beli Sekarang</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFIKASI -->
+  <div class="toast-container position-fixed top-0 end-0 p-3">
+    <div id="orderToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <strong class="me-auto">ShoeLady</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body">
+        Pesanan Anda sedang diproses! Terima kasih telah berbelanja di ShoeLady.
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- TENTANG PENJUAL -->
+  <section id="penjual" class="py-5 cute-bg">
+    <div class="container text-center">
+      <h2 class="section-title">Tentang Penjual</h2>
+      <p class="section-desc">ShoeLady adalah toko online yang menjual sepatu wanita aesthetic, lucu, dan elegan.</p>
+      <p><strong>Alamat:</strong> Jl. Mawar Indah No. 28, Jember - Jawa Timur</p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="text-center py-3 cute-footer">
+    <p>© 2025 ShoeLady - Cute Aesthetic Shoes</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>

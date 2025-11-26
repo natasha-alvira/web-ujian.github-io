@@ -1,0 +1,155 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #B39470;
+}
+
+/* NAVBAR */
+.cute-nav {
+  background-color: #B39470;
+}
+
+.navbar-brand {
+  color: white !important;
+  font-size: 22px;
+}
+
+.nav-link {
+  color: white !important;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+/* HERO */
+.hero {
+  height: 85vh;
+  background: url('https://kokl.ua/wp-content/uploads/2025/10/chy-vplyvaye-vzuttya-yake-my-nosymo-na-hrebet-ta-postavu.jpg') center/cover;
+  color: white;
+}
+
+.hero-title {
+  font-size: 45px;
+  text-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
+}
+
+.hero-sub {
+  font-size: 18px;
+}
+
+/* Section Tentang Toko */
+.toko-section {
+  padding: 80px 20px;
+  background: #fff;
+  text-align: center;
+}
+
+.toko-title {
+  font-size: 34px;
+  font-weight: 700;
+  color: #8a6a4a;
+  margin-bottom: 30px;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.toko-box {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 35px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+  animation: fadeInUp 1.3s ease-in-out;
+}
+
+.toko-box p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #6d5844;
+  margin-bottom: 25px;
+}
+
+.toko-info {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.info-item {
+  background: #fff;
+  padding: 18px 25px;
+  border-radius: 15px;
+  width: 230px;
+  text-align: center;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.info-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+}
+
+.info-item i {
+  font-size: 30px;
+  color: #b8946d;
+  margin-bottom: 10px;
+}
+
+.info-item h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #5c4938;
+}
+
+.info-item p {
+  font-size: 15px;
+  color: #7a6a57;
+  margin-top: 6px;
+}
+
+/* Animasi */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* PRODUK */
+.product-card {
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.price {
+  color: #B39470;
+  font-weight: bold;
+}
+
+.btn-cute {
+  background-color: #B39470;
+  color: white;
+  border-radius: 30px;
+  padding: 8px 20px;
+}
+
+.btn-cute:hover {
+  background-color: #B39470;
+  color: white;
+}
