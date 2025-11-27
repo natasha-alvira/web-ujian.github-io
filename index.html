@@ -24,6 +24,7 @@
           <li class="nav-item"><a class="nav-link" href="#beranda">Beranda</a></li>
           <li class="nav-item"><a class="nav-link" href="#tentang">Tentang Toko</a></li>
           <li class="nav-item"><a class="nav-link" href="#produk">Produk</a></li>
+          <li class="nav-item"><a class="nav-link" href="#review">Review</a></li>
           <li class="nav-item"><a class="nav-link" href="#penjual">Tentang Penjual</a></li>
         </ul>
       </div>
@@ -73,7 +74,6 @@
       </div>
     </div>
   </section>
-
 
   <!-- PRODUK -->
   <section id="produk" class="py-5">
@@ -126,17 +126,17 @@
         </div>
       </div>
     </div>
-
   </section>
 
   <!-- MODAL DETAIL PRODUK 1 -->
   <div class="modal fade" id="detail1">
     <div class="modal-dialog">
       <div class="modal-content p-3">
-        <h4>Cute Pink Shoes</h4>
+        <h4>Sneakers</h4>
         <img src="https://images.tokopedia.net/img/cache/700/VqbcmM/2023/8/28/8290d268-39fa-47c4-9a36-dd8accf7d640.jpg"
           class="img-fluid rounded my-2">
-        <p>Sepatu pink aesthetic cocok untuk hangout & daily style.</p>
+        <p>Tampil beda, melangkah penuh gaya! Sneakers terbaru kami hadir dengan desain paling up-to-date untuk lengkapi
+          OOTD kamu.</p>
         <p class="fw-bold">Harga: Rp 150.000</p>
         <button class="btn btn-cute w-100" onclick="showPurchaseForm(1)">Beli Sekarang</button>
       </div>
@@ -147,12 +147,13 @@
   <div class="modal fade" id="detail2">
     <div class="modal-dialog">
       <div class="modal-content p-3">
-        <h4>Cream Aesthetic Shoes</h4>
+        <h4>Flatshoes</h4>
         <img
           src="https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/a3c440f705ad42e6a0dd4715e07ecc27~tplv-aphluv4xwc-resize-webp:800:800.webp?dr=15584&t=555f072d&ps=933b5bde&shp=6ce186a1&shcp=e1be8f53&idc=my2&from=1826719393"
           class="img-fluid rounded my-2">
-        <p>Sepatu warna cream lembut, cocok untuk outfit casual.</p>
-        <p class="fw-bold">Harga: Rp 165.000</p>
+        <p>Definisi cantik yang praktis! Flat shoes elegan ini gampang banget di-mix and match sama outfit kerja atau
+          dress santaimu.</p>
+        <p class="fw-bold">Harga: Rp 85.000</p>
         <button class="btn btn-cute w-100" onclick="showPurchaseForm(1)">Beli Sekarang</button>
       </div>
     </div>
@@ -165,29 +166,124 @@
   <div class="modal fade" id="detail3">
     <div class="modal-dialog">
       <div class="modal-content p-3">
-        <h4>White Elegant Shoes</h4>
+        <h4>Slingback</h4>
         <img src="https://images.tokopedia.net/img/cache/700/VqbcmM/2023/3/29/a01d5dda-6271-4aec-afab-cc3106871b4c.jpg"
           class="img-fluid rounded my-2">
-        <p>Sepatu putih elegan untuk tampilan modern & stylish.</p>
+        <p>Kenyamanan flat shoes, gaya heels. Rasakan keseimbangan sempurna dengan slingback shoes kami yang didesain
+          untuk kenyamanan maksimal.</p>
         <p class="fw-bold">Harga: Rp 175.000</p>
         <button class="btn btn-cute w-100" onclick="showPurchaseForm(1)">Beli Sekarang</button>
       </div>
     </div>
   </div>
 
-  <!-- TOAST NOTIFIKASI -->
-  <div class="toast-container position-fixed top-0 end-0 p-3">
-    <div id="orderToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-      <div class="toast-header">
-        <strong class="me-auto">ShoeLady</strong>
-        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-      </div>
-      <div class="toast-body">
-        Pesanan Anda sedang diproses! Terima kasih telah berbelanja di ShoeLady.
+  <!-- MODAL FORM PEMBELIAN -->
+  <div class="modal fade" id="purchaseForm" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content p-3">
+        <h4 class="text-center fw-bold mb-3">Form Pembelian</h4>
+
+        <form id="formPembelian">
+          <input type="hidden" id="produkName">
+
+          <div class="mb-3">
+            <label class="form-label">Nama Produk</label>
+            <input type="text" id="produkDisplay" class="form-control">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Nama Pembeli</label>
+            <input type="text" id="namaPembeli" class="form-control" required>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Nomor HP</label>
+            <input type="tel" id="nomorHp" class="form-control" required>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Alamat</label>
+            <textarea id="alamatPembeli" class="form-control" required></textarea>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Jumlah</label>
+            <input type="number" id="jumlahPembelian" min="1" value="1" class="form-control" required>
+          </div>
+
+          <button type="submit" class="btn btn-cute w-100 mt-2">Kirim Pesanan</button>
+        </form>
       </div>
     </div>
   </div>
 
+  <!-- REVIEW PELANGGAN -->
+<section id="review" class="py-5" style="background:#fff0f7;">
+  <div class="container">
+    <h2 class="text-center mb-4">Review Pelanggan</h2>
+    <p class="text-center text-muted mb-5">
+      Apa kata mereka setelah belanja di ShoeLady? 💖
+    </p>
+
+    <div class="row g-4">
+
+      <!-- REVIEW 1 -->
+      <div class="col-md-4">
+        <div class="card shadow-sm p-3 border-0 rounded-4">
+          <div class="d-flex align-items-center mb-3">
+            <img src="https://i.pravatar.cc/80?img=15" class="rounded-circle me-3" width="60">
+            <div>
+              <h6 class="mb-0 fw-bold">Aulia Rahma</h6>
+              <div class="text-warning">
+                ★★★★★
+              </div>
+            </div>
+          </div>
+          <p class="text-muted">
+            “Sepatunya lucu banget! Pengiriman cepat dan kualitasnya bagus. Pasti beli lagi!”
+          </p>
+        </div>
+      </div>
+
+      <!-- REVIEW 2 -->
+      <div class="col-md-4">
+        <div class="card shadow-sm p-3 border-0 rounded-4">
+          <div class="d-flex align-items-center mb-3">
+            <img src="https://i.pravatar.cc/80?img=32" class="rounded-circle me-3" width="60">
+            <div>
+              <h6 class="mb-0 fw-bold">Nadya Putri</h6>
+              <div class="text-warning">
+                ★★★★★
+              </div>
+            </div>
+          </div>
+          <p class="text-muted">
+            “Modelnya sama persis seperti foto. Nyaman dipakai dan harganya pas!”
+          </p>
+        </div>
+      </div>
+
+      <!-- REVIEW 3 -->
+      <div class="col-md-4">
+        <div class="card shadow-sm p-3 border-0 rounded-4">
+          <div class="d-flex align-items-center mb-3">
+            <img src="https://i.pravatar.cc/80?img=56" class="rounded-circle me-3" width="60">
+            <div>
+              <h6 class="mb-0 fw-bold">Michelle Tan</h6>
+              <div class="text-warning">
+                ★★★★☆
+              </div>
+            </div>
+          </div>
+          <p class="text-muted">
+            “Toko sangat responsif! Sepatunya nyaman, cuma ukuran sedikit lebih besar.”
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
 
 
@@ -197,6 +293,9 @@
       <h2 class="section-title">Tentang Penjual</h2>
       <p class="section-desc">ShoeLady adalah toko online yang menjual sepatu wanita aesthetic, lucu, dan elegan.</p>
       <p><strong>Alamat:</strong> Jl. Mawar Indah No. 28, Jember - Jawa Timur</p>
+      <p><strong>Jam Buka:</strong> Setiap Hari (09.00 - 22.00)</p>
+      <p><strong>WhatsApp:</strong> +62 838-5283-6290</p>
+      <p><strong>Email:</strong> ShoeLady@gmail.com</p>
   </section>
 
   <!-- FOOTER -->
@@ -204,4 +303,34 @@
     <p>© 2025 ShoeLady - Cute Aesthetic Shoes</p>
   </footer>
 
+  <script>
+    function showPurchaseForm(productId) {
+      // Ambil data produk berdasarkan ID
+      let namaProduk = "";
+
+      if (productId === 1) namaProduk = "Sneakers";
+      if (productId === 2) namaProduk = "Flatshoes";
+      if (productId === 3) namaProduk = "Sling Back Shoes";
+
+      // Taruh ke input
+      document.getElementById("produkName").value = productId;
+      document.getElementById("produkDisplay").value = namaProduk;
+
+      // Tampilkan modal form pembelian
+      var myModal = new bootstrap.Modal(document.getElementById('purchaseForm'));
+      myModal.show();
+    }
+
+    // Aksi submit form
+    document.getElementById("formPembelian").addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      alert("Pesanan berhasil dikirim!\nTerima kasih telah berbelanja di ShoeLady 💖");
+
+      // Reset form
+      document.getElementById("formPembelian").reset();
+    });
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
